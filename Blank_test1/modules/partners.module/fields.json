@@ -1,38 +1,40 @@
-[
-  {
-    "name": "partners_group",
-    "label": "Partners List",
-    "required": false,
-    "locked": false,
-    "occurrence": {
-      "min": null,
-      "max": null,
-      "sorting_label_field": null,
-      "default": null
-    },
-    "children": [
-      {
-        "name": "image",
-        "label": "Image",
-        "required": false,
-        "locked": false,
-        "inline_help_text": "",
-        "help_text": "",
-        "responsive": true,
-        "resizable": true,
-        "show_loading": false,
-        "type": "image",
-        "default": {
-          "size_type": "auto",
-          "src": "",
-          "alt": null,
-          "loading": "disabled"
-        }
-      }
-    ],
-    "type": "group",
-    "inline_help_text": "",
-    "help_text": "",
-    "default": []
-  }
-]
+[ {
+  "id" : "partners_group",
+  "name" : "partners_group",
+  "display_width" : null,
+  "label" : "Partners List",
+  "help_text" : "",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "partners_group.image",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "help_text" : "",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ ]
+} ]

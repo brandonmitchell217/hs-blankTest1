@@ -1,4 +1,5 @@
 .landing {
+  min-height: 100vh;
   padding: 0 8.33%;
   display: flex;
   justify-content: center;
@@ -17,17 +18,20 @@
   border-radius: 14px;
 }
 
-.landing .container .container_left-top {
+.landing .container .container_left-top__imageLeft,
+.landing .container .container_right-bottom__imageRight {
   width: 50%;
   height: 100%;
 }
-.landing .container .container_left-top img {
+.landing .container .container_left-top__imageLeft img,
+.landing .container .container_right-bottom__imageRight img {
   max-width: 100%;
   display: block;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
 }
-.landing .container .container_right-bottom {
+.landing .container .container_right-bottom__imageLeft,
+.landing .container .container_left-top__imageRight {
   width: 50%;
   padding: 0 1rem;
   display: flex;
@@ -38,11 +42,13 @@
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
 }
-.landing .container .container_right-bottom p {
+.landing .container .container_right-bottom__imageLeft p,
+.landing .container .container_left-top__imageRight p {
   margin: 10px 0;
 }
 
-.landing .container .container_right-bottom a {
+.landing .container .container_right-bottom__imageLeft a,
+.landing .container .container_left-top__imageRight a {
   padding: 0.25em 1em;
   color: #fff;
   background-color: #000;

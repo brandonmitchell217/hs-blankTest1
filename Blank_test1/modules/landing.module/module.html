@@ -3,18 +3,33 @@
   style="background-image: url('{{ module.landing_background.src }}');"
 >
   <div class="container">
-    <div class="container_left-top">
+    {% if module.landing.landing_layout == "left" %}
+    <div class="container_left-top__imageLeft">
       <img
-        src="{{ module.landing_image.src }}"
-        alt="{{ module.landing_image.alt }}"
+        src="{{ module.landing.landing_image.src }}"
+        alt="{{ module.landing.landing_image.alt }}"
       />
     </div>
-    <div class="container_right-bottom">
-      <div>{{ module.landing_text }}</div>
-      {% if module.landing_link.url.href %}
-      <a href="{{ module.landing_link.url.href }}">The CTA</a>
+    <div class="container_right-bottom__imageLeft">
+      <div>{{ module.landing.landing_text }}</div>
+      {% if module.landing.landing_link.url.href %}
+      <a href="{{ module.landing.landing_link.url.href }}">The CTA</a>
       {% endif %}
     </div>
+    {% endif %} {% if module.landing.landing_layout == "right" %}
+    <div class="container_left-top__imageRight">
+      <div>{{ module.landing.landing_text }}</div>
+      {% if module.landing.landing_link.url.href %}
+      <a href="{{ module.landing.landing_link.url.href }}">The CTA</a>
+      {% endif %}
+    </div>
+    <div class="container_right-bottom__imageRight">
+      <img
+        src="{{ module.landing.landing_image.src }}"
+        alt="{{ module.landing.landing_image.alt }}"
+      />
+    </div>
+    {% endif %}
   </div>
   {% if module.landing_background.src %}
   <div class="gradient1"></div>
