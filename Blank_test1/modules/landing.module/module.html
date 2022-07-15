@@ -1,0 +1,22 @@
+<section
+  class="landing"
+  style="background-image: url('{{ module.landing_background.src }}');"
+>
+  <div class="container">
+    <div class="container_left-top">
+      <img
+        src="{{ module.landing_image.src }}"
+        alt="{{ module.landing_image.alt }}"
+      />
+    </div>
+    <div class="container_right-bottom">
+      <div>{{ module.landing_text }}</div>
+      {% if module.landing_link.url.href %}
+      <a href="{{ module.landing_link.url.href }}">The CTA</a>
+      {% endif %}
+    </div>
+  </div>
+  {% if module.landing_background.src %}
+  <div class="gradient1"></div>
+  {% endif %}
+</section>

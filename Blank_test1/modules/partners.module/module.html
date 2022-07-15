@@ -1,0 +1,10 @@
+<div class="partners">
+  <h2>Partners</h2>
+  <div class="container">
+    {% for image in module.partners_group %}
+    <div class="card">
+      <img src="{{ image.image.src }}" alt="{{ image.image.alt }}" />
+    </div>
+    {% endfor %}
+  </div>
+</div>

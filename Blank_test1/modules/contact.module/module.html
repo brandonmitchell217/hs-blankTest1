@@ -1,0 +1,30 @@
+<section class="contact">
+  <div class="container">
+    <h1>{{ module.contact_title }}</h1>
+    <div class="flex">
+      <div class="flex-topLeft">
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="flex-bottomRight">
+        <h3>Our Address</h3>
+        <p>{{ module.address_group.address_street }}</p>
+        <p>
+          {{ module.address_group.address_city }}, {{
+          module.address_group.address_state }} {{
+          module.address_group.address_zip }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
